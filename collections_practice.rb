@@ -40,7 +40,7 @@ end
 
 def add_s(array)
   array.each_with_index.collect do |element, index|
-    element[element.length] = "s" unless index == 1
+    element[element.length] + "s" unless index == 1
   end
 end
 
